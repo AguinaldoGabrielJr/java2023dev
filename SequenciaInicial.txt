@@ -1,0 +1,5 @@
+Worspace (selecionar a pasta onde projetos iram ficar)
+Mudar o layout: Window : Perspective: Open Perspective : Java
+Zera o layout: Window: Perspective : Reset Perspective
+Mostrar a aba Console: Window : Show View : Console
+Criar projeto: File : New : Java Project
