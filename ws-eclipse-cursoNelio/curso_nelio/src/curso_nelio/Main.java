@@ -6,32 +6,24 @@ public class Main {
 
 	public static void main(String[] args) {
 
-	//Saida de dados
+		// Saida de dados
+		// Concatenar elementos
+
+		String nome = "Guina";
+		int idade = 36;
+		double salario = 5000;
+
 		
-	int x = 36;
-	double y = 10.35784;
-	
-	System.out.println("Teste saida de dados");
-	System.out.print("Valor de x: ");
-	System.out.println(x);
-	
-	System.out.print("Valor de y: ");
-	System.out.println(y);
-	
-	System.out.print("Valor de y com máscara para duas casas decimais: ");
-	System.out.printf("%.2f%n", y);
-	
-	System.out.print("Valor de y com máscara para quatro casas decimais: ");
-	System.out.printf("%.4f%n", y);
-	
-	//Os valores saem pelo padrão de lingua do PC, caso eu queira mudar a saida 
-	//dados para . por exemplo uso comando Locate a seguir...
-	
-	Locale.setDefault(Locale.US);
-	System.out.print("Valor de y com máscara para quatro casas decimais: ");
-	System.out.printf("%.4f%n", y);
-	
+		// %f = ponto flutuante
+		// %d = inteiro
+		// %s = texto
+		// %n = quebra de linha
 		
+		
+		System.out.printf("%s tem %d anos e ganha R$ %.2f ", nome, idade, salario);
+		System.out.println();
+		System.out.println("Meu nome é: " + nome + " e meu salário é R$ " + salario + ".");
+
 	}
 
 }
