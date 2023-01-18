@@ -5,35 +5,27 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// Entrada de dados
+		// Entrada de dados, ler texto até quebra de linha(Apertar Enter)
 
 		Scanner sc = new Scanner(System.in);
-
-		String x;
-		int y;
-		double f;
-		char c, d;
 		
-		System.out.println("Por favor digite algo: ");
-		x = sc.next();
+		int x;
+		String s1, s2,s3;
 		
-		System.out.println("Por favor digite um número inteiro: ");
-		y = sc.nextInt();
+		//Tomar cuidado quando colocar algum next diferente de nextLine(), pois ele irá consumir o mesmo.
+		//Para burlar isso posso faço um nextLine() extra... Como na linha 19.
 		
-		System.out.println("Por favor digite um número: ");
-		f = sc.nextDouble();
+		x = sc.nextInt();
+		sc.nextLine();
+		s1 = sc.nextLine();
+		s2 = sc.nextLine();
+		s3 = sc.nextLine();
 		
-		System.out.println("Por favor digite algo(Irá aparecer somente a posição zero: ");
-		c = sc.next().charAt(0);
-		
-		System.out.println("Por favor digite algo(Irá aparecer somente a posição hum: ");
-		d = sc.next().charAt(1);
-
-		System.out.println("Você digitou: " + x);
-		System.out.println("Você digitou: " + y);
-		System.out.println("Você digitou: " + f);
-		System.out.println("Você digitou: " + c);
-		System.out.println("Você digitou: " + d);
+		System.out.println("Resultados:\n");
+		System.out.println(x);
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
 		
 		sc.close();
 	}
