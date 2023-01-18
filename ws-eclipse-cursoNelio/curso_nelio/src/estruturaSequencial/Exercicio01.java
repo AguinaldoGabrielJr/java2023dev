@@ -1,4 +1,4 @@
-package curso_nelio;
+package estruturaSequencial;
 
 import java.util.Scanner;
 

@@ -1,8 +1,9 @@
-package curso_nelio;
+package estruturaSequencial;
 
 import java.util.Locale;
 import java.util.Scanner;
 
+//Por algum motivo o 05 bugou com git kk
 public class Exercicio005 {
 
 	public static void main(String[] args) {

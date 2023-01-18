@@ -1,4 +1,4 @@
-package curso_nelio;
+package estruturaSequencial;
 
 public class Main {
 
