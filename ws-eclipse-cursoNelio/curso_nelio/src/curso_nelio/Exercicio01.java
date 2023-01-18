@@ -2,7 +2,7 @@ package curso_nelio;
 
 import java.util.Scanner;
 
-public class Exercicio01Secao4 {
+public class Exercicio01 {
 
 	public static void main(String[] args) {
 		//Faça um programa para ler dois valores inteiros, e depois mostrar na tela a soma 
