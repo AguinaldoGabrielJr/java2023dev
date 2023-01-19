@@ -5,50 +5,27 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-		// Switch case
-		//Domingo dia 1 até segunda dia 7
+		// Expressão condicional ternaria
 
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Insira o dia da semana...");
+		//Exemplo com if
+		double preco = 34.50, desconto;
 		
-		int x = sc.nextInt();
-		String dia;
-		
-		switch (x) {
-		case 1: {
-			dia = "domingo";
-			break;
-		}
-		case 2: {
-			dia = "segunda";
-			break;
-		}
-		case 3: {
-			dia = "terça";
-			break;
-		}
-		case 4: {
-			dia = "quarta";
-			break;
-		}
-		case 5: {
-			dia = "quinta";
-			break;
-		}
-		case 6: {
-			dia = "sexta";
-			break;
-		}
-		case 7: {
-			dia = "sabado";
-			break;
-		}
-		default:
-			dia = "Valor invalido";
+		if (preco < 20.0) {
+			desconto = preco * 0.1;
+		}else {
+			desconto = preco * 0.05;
 		}
 		
-		System.out.println("Dia da semana é " + dia);
-		sc.close();
+		System.out.println("Com if " + desconto);
+		
+		//Exemplo ternário
+		double preco2 = 34.50, desconto2;
+		
+		desconto2 = (preco < 20.0) ? (preco * 0.1) : (preco *0.05) ;
+		System.out.println("Ternário " + desconto2);
+		
+		
+		
 
 	}
 
