@@ -1,32 +1,27 @@
 package estruturaSequencial;
 
-import java.util.Scanner;
-
 public class Main {
 
 	public static void main(String[] args) {
-		// Expressão condicional ternaria
+		// Escopo e inicializacao
+		
+		//Reclamando que tem que receber valor para ser inicializada
+		//double price;
+		//System.out.println(price);
 
-		//Exemplo com if
-		double preco = 34.50, desconto;
+		//Esta no escopo do bloco if, fora dele não existe
+		//double price = 400.0;
+		//if (price < 200.00) {
+		//	double discount = price * 0.1;
+		//}
+		//System.out.println(discunt);
 		
-		if (preco < 20.0) {
-			desconto = preco * 0.1;
-		}else {
-			desconto = preco * 0.05;
-		}
+		//Usando ternário fica fora de ume scopo de bloco por ex
+		//double price = 400.0;
+		//double discount = (price < 200.00) ? price *0.1: price *0.2 ;
 		
-		System.out.println("Com if " + desconto);
-		
-		//Exemplo ternário
-		double preco2 = 34.50, desconto2;
-		
-		desconto2 = (preco < 20.0) ? (preco * 0.1) : (preco *0.05) ;
-		System.out.println("Ternário " + desconto2);
-		
-		
-		
-
+		//Para fugir desse erro  da linha 17 por causa do escopo posso inicializar essa variavel antes do bloco
+				
 	}
 
 }
