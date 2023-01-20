@@ -1,27 +1,29 @@
 package estruturaSequencial;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// Escopo e inicializacao
+		//Como usar o debug ctrl + shift + b marca e desmarca
+		//Quando rodo no debug abre a perspectiva de debug 
+		//F6 next
 		
-		//Reclamando que tem que receber valor para ser inicializada
-		//double price;
-		//System.out.println(price);
-
-		//Esta no escopo do bloco if, fora dele não existe
-		//double price = 400.0;
-		//if (price < 200.00) {
-		//	double discount = price * 0.1;
-		//}
-		//System.out.println(discunt);
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
 		
-		//Usando ternário fica fora de ume scopo de bloco por ex
-		//double price = 400.0;
-		//double discount = (price < 200.00) ? price *0.1: price *0.2 ;
+		double largura = sc.nextDouble();
+		double comprimento = sc.nextDouble();
+		double metroQuadrado = sc.nextDouble();
 		
-		//Para fugir desse erro  da linha 17 por causa do escopo posso inicializar essa variavel antes do bloco
-				
+		double area = largura * comprimento;
+		double preco = area * metroQuadrado;
+		
+		System.out.printf("AREA = %.2f%n", area);
+		System.out.printf("PREÇO = %.2f%n", preco);
+		
+		sc.close();
 	}
 
 }
