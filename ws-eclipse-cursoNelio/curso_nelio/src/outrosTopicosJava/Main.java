@@ -2,27 +2,31 @@ package outrosTopicosJava;
 
 public class Main {
 	public static void main(String[] args) {
-		//Funcões interessantes para String
+		//Split
 		
-		String original = "abcde FGHIJ ABC abc DEFG ";
-		String s01 = original.toLowerCase();
-		String s02 = original.toUpperCase();
-		String s03 = original.trim();
-		String s04 = original.substring(2);
-		String s05 = original.substring(2, 9);
-		String s06 = original.replace('a', 'x');
-		String s07 = original.replace("abc", "xy");
-		int i = original.indexOf("bc");
-		int j = original.lastIndexOf("bc");
-		System.out.println("Original: -" + original + "-");
-		System.out.println("toLowerCase: -" + s01 + "-");
-		System.out.println("toUpperCase: -" + s02 + "-");
-		System.out.println("trim: -" + s03 + "-");
-		System.out.println("substring(2): -" + s04 + "-");
-		System.out.println("substring(2, 9): -" + s05 + "-");
-		System.out.println("replace('a', 'x'): -" + s06 + "-");
-		System.out.println("replace('abc', 'xy'): -" + s07 + "-");
-		System.out.println("Index of 'bc': " + i);
-		System.out.println("Last index of 'bc': " + j);
+		String s = "potato apple lemon";
+		String p = "potato_apple_lemon_orange";
+		
+		String[] vetor = s.split(" "); //Separador/split
+		String s1 = vetor[0];
+		String s2 = vetor[1];
+		String s3 = vetor[2];
+		
+		System.out.println(vetor[0]);
+		System.out.println(vetor[1]);
+		System.out.println(vetor[2]);
+		
+		String[] vetor2 = p.split("_"); //Separador/split
+		String p1 = vetor2[0];
+		String p2 = vetor2[1];
+		String p3 = vetor2[2];
+		String p4 = vetor2[3];
+		
+		System.out.println(vetor2[0]);
+		System.out.println(vetor2[1]);
+		System.out.println(vetor2[2]);
+		System.out.println(vetor2[3]);
+		
 	}
+	
 }
