@@ -1,4 +1,4 @@
-package ExerciciosEstruturaCondicionalIfElse;
+package exerciciosEstruturaCondicionalIfElse;
 
 import java.util.Scanner;
 

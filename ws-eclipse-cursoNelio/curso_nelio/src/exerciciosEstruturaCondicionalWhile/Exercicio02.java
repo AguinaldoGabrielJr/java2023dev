@@ -1,4 +1,4 @@
-package ExerciciosEstruturaCondicionalWhile;
+package exerciciosEstruturaCondicionalWhile;
 
 import java.util.Locale;
 import java.util.Scanner;

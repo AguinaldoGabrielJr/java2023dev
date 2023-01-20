@@ -1,4 +1,4 @@
-package ExerciciosEstruturaCondicionalFor;
+package exerciciosEstruturaCondicionalFor;
 
 import java.util.Locale;
 import java.util.Scanner;
