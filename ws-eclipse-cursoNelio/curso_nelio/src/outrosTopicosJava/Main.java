@@ -1,32 +1,27 @@
 package outrosTopicosJava;
 
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Main {
 	public static void main(String[] args) {
-		//Split
+		// Comentários em Java
+		// Comentario em bloco 12 ao 14
+		// Comentariod de linha na 23
 		
-		String s = "potato apple lemon";
-		String p = "potato_apple_lemon_orange";
-		
-		String[] vetor = s.split(" "); //Separador/split
-		String s1 = vetor[0];
-		String s2 = vetor[1];
-		String s3 = vetor[2];
-		
-		System.out.println(vetor[0]);
-		System.out.println(vetor[1]);
-		System.out.println(vetor[2]);
-		
-		String[] vetor2 = p.split("_"); //Separador/split
-		String p1 = vetor2[0];
-		String p2 = vetor2[1];
-		String p3 = vetor2[2];
-		String p4 = vetor2[3];
-		
-		System.out.println(vetor2[0]);
-		System.out.println(vetor2[1]);
-		System.out.println(vetor2[2]);
-		System.out.println(vetor2[3]);
-		
-	}
+		 /* Este programa calcula as raízes de uma equação do segundo grau Os valores dos
+		 * coeficientes devem ser digitados um por linha
+		 */
 	
-}
+				Locale.setDefault(Locale.US);
+				Scanner sc = new Scanner(System.in);
+				double a, b, c, delta;
+				System.out.println("Digite os valores dos coeficientes:");
+				a = sc.nextDouble();
+				b = sc.nextDouble();
+				c = sc.nextDouble();
+				delta = b * b - 4 * a * c; // cálculo do valor de delta
+
+			}
+
+		}
