@@ -1,4 +1,4 @@
-package poo.entities;
+package poo.triangle;
 
 import java.util.Locale;
 import java.util.Scanner;
