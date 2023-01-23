@@ -9,7 +9,8 @@ public class Product {
 	public Product() {
 		
 	}
-	
+	//Seguindo algumas regras posso ter métodos com estilos diferentes...
+	 
 	public Product(String name, double price, int quantity) {
 		this.name = name;
 		this.price = price;
