@@ -6,11 +6,19 @@ public class Product {
 	double price;
 	int quantity;
 
+	public Product() {
+		
+	}
+	
 	public Product(String name, double price, int quantity) {
-		super();
 		this.name = name;
 		this.price = price;
 		this.quantity = quantity;
+	}
+	
+	public Product(String name, double price) {
+		this.name = name;
+		this.price = price;
 	}
 
 	public double totalValueInStock() {
