@@ -21,6 +21,11 @@ public class Main {
 		int quantity = sc.nextInt();
 		
 		Product product = new Product(name, price, quantity);
+		Product product2 = new Product(name, price, quantity);
+		
+		/*Exemplo de mudança de encapsulamento
+		product2.name = "Computer"; Não tem acesso pois esta como private, deve se usar método acessor
+		product2.setName("X");*/
 		
 		double totalValue = product.totalValueInStock();
 		System.out.println();
