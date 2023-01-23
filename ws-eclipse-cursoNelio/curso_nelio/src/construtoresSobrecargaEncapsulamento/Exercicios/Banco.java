@@ -41,10 +41,6 @@ public class Banco {
 		return saldo;
 	}
 
-	public void setSaldo(double saldo) {
-		this.saldo = saldo;
-	}
-
 	public void deposito(double saldo) {
 		this.saldo += saldo;
 	}
