@@ -29,7 +29,6 @@ public class PessoaExercicio9 {
 		this.idade = idade;
 	}
 
-	@Override
 	public String toString() {
 		return "nome: " + nome + ", idade: " + idade;
 	}
