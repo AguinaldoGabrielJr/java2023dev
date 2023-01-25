@@ -1,4 +1,4 @@
-package poo.listas;
+package poo.listas.exerciciosVetor;
 
 public class Product {
 

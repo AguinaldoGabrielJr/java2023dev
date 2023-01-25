@@ -1,4 +1,4 @@
-package poo.listas;
+package poo.listas.exerciciosVetor;
 
 import java.util.Locale;
 import java.util.Scanner;
