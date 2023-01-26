@@ -50,6 +50,7 @@ public class Main {
 		
 		System.out.print("Qual a porcentagem do aumento do funcionário? ");
 		double aumento = sc.nextDouble();
+		System.out.println("teste");
 		
 		sc.close();
 
