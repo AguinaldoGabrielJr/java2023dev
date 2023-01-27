@@ -46,11 +46,11 @@ public class Main {
 			System.out.print("Id existente, tente novamente:  ");
 			id = sc.nextInt();
 			sc.nextLine();
+			System.out.println("teste");
 		}
 		
 		System.out.print("Qual a porcentagem do aumento do funcionário? ");
 		double aumento = sc.nextDouble();
-		System.out.println("teste");
 		
 		sc.close();
 
