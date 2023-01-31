@@ -41,7 +41,7 @@ public class ExercicioFuncionario {
 	}
 
 	public void aumentoSalario(double aumento) {
-		this.salario *= salario + aumento / 100;
+		this.salario += salario * aumento / 100.0;
 	}
 
 	public String toString() {
