@@ -45,11 +45,12 @@ public class Main {
 		System.out.println("d09 = " + d09);
 		
 		System.out.println();
-		System.out.println("Dia, mês, ano,horaário --> Data-Hora");
+		System.out.println("Dia, mês, ano,horário --> Data-Hora");
 		LocalDate d10 = LocalDate.of(2023, 2,04);
 		LocalDateTime d11 = LocalDateTime.of(2023,2,04,1,30);
 		System.out.println("d10 = " + d10);
 		System.out.println("d11 = " + d11);
+		
 		
 	}
 
