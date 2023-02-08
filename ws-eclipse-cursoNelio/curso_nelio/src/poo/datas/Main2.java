@@ -38,5 +38,4 @@ public class Main2 {
 		System.out.println("d06 = " + fmt5.format(d06));
 		
 	}
-
 }
