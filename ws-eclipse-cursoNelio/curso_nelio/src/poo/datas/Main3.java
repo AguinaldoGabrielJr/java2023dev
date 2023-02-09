@@ -1,5 +1,6 @@
 package poo.datas;
 
+import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -39,6 +40,22 @@ public class Main3 {
 		System.out.println("semanaPassadaInstant = " + semanaPassadaInstant);
 		System.out.println("proximaSemanaInstant = " + proximaSemanaInstant);
 		
+		//Calculando com a classe do java DUration
+		//No t1 ele da erro por nao conseguir fazer os calcs sem h,s,m...dai converto dessa foma para LocalDAteTIme, errado colocar assim manualmente, T2 vai ter um clean
+		Duration t1 = Duration.between(semanaPassada.atTime(0,0), d04.atTime(0,0));
+		Duration t2 = Duration.between(semanaPassada.atStartOfDay(), d04.atStartOfDay());
+		Duration t3 = Duration.between(semanaPassadaTempo, d05);
+		
+		System.out.println();
+		System.out.println("t1 dias = " + t1.toDays());
+		System.out.println("t2 dias = " + t2.toDays());
+		System.out.println("t3 dias = " + t3.toDays());
+		
+		//Com instant
+		Duration t4 = Duration.between(semanaPassadaInstant, d06);
+		Duration t5 = Duration.between(d06,semanaPassadaInstant);
+		System.out.println("t4 dias = " + t4.toDays());
+		System.out.println("t5 dias = " + t5.toDays());
 	}
 
 }
