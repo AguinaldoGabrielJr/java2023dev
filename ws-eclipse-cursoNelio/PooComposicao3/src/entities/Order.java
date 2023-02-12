@@ -12,4 +12,8 @@ public class Order {
 	public void additem(OrderItem item) {
 		
 	}
+	
+public void deleteItem(OrderItem item) {
+		
+	}
 }
