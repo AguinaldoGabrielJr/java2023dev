@@ -6,32 +6,22 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Account acc = new Account(1001, "Alex", 0.0);
-		BusinessAccount bacc = new BusinessAccount(1002, "Maria", 0.0, 500.0);
+		Account ac = new Account(1001, "Alex" , 1000.0);
+		ac.withdraw(200.0);
+		System.out.println(ac.getBalance());
 		
-		//UPCASTING, como a subclasse É UMA conta da super ele aceita...
+		Account ac1 = new SavingsAccount(1002, "Ana", 1000.0, 500.0);
+		ac1.withdraw(200.0);
+		System.out.println(ac1.getBalance());
 		
-		Account acc1 = bacc;
-		Account acc2 = new BusinessAccount(1003, "Bob", 0.0, 200.0);
-		Account acc3 = new SavingsAccount(1004, "Anna", 0.0, 0.01);
+		SavingsAccount ac2 = new SavingsAccount(1003, "Abu", 1000.0, 500.0);
+		ac2.withdraw(200.0);
+		System.out.println(ac1.getBalance());
 		
-		//DOWNCASTING
-		//Fazendo o casting ele funciona
-		BusinessAccount acc4 = (BusinessAccount) acc2;
-		//Compilador sugeriu transformar em BusinessAccount pois criei acc3 como Account...dai ele aceita aqui mas dá erro em tempo de execução
-		//BusinessAccount acc5 = (BusinessAccount) acc3;
-		//Eu mesmo tenho que usar condicionais para garantir qual tipo de objeto é..INSTANCEOF é utilizado para isso
-		if (acc3 instanceof BusinessAccount) {
-			BusinessAccount acc5 = (BusinessAccount) acc3;
-			acc5.loan(200.0);
-			System.out.println("Loan!");
-		}
+		Account ac3 = new BusinessAccount(1004, "Celo", 1000.0, 500.0);
+		ac3.withdraw(200.0);
+		System.out.println(ac3.getBalance());
 		
-		if (acc3 instanceof SavingsAccount) {
-			SavingsAccount acc5 = (SavingsAccount)acc3;
-			acc5.updateBalance();
-			System.out.println("Update!");
-		}
 	}
 
 }
