@@ -48,5 +48,7 @@ public class Account {
 		return "Number = " + number + ", Name = " + holder + ", Balance = " + balance;
 	}
 	
-	
+	public final void testarFinal() {
+		System.out.println("Teste final");
+	}
 }

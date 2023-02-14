@@ -1,6 +1,6 @@
 package entities;
 
-public class SavingsAccount extends Account {
+public final class SavingsAccount extends Account {
 
 	private Double interestRate;
 
@@ -29,4 +29,10 @@ public class SavingsAccount extends Account {
 	public void withdraw(Double ammount) {
 		this.balance -= ammount;
 	}
+	
+	/* NÃO PERMITE QUE SEJA CRIADA POIS TENHO FINAL NA MINHA CLASSE SUPER
+	 * UTILIZAR FINAL NA CLASSE FILHA EM ALGUM MÉTODO QUE JÁ É UMA SOBREPOSIÇÃO PODE TRAZER SEGURANÇA
+	public final void testarFinal() {
+		System.out.println("Teste final");
+	}*/
 }
