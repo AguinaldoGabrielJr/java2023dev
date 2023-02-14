@@ -1,23 +1,23 @@
 package entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Cliente {
 
+	private static SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	
 	private String name;
 	private String email;
 	private Date birthDate;
-	private Order order;
 
 	public Cliente() {
-		Order order = new Order();
 	}
 
-	public Cliente(String name, String email, Date birthDate, Order order) {
+	public Cliente(String name, String email, Date birthDate) {
 		this.name = name;
 		this.email = email;
 		this.birthDate = birthDate;
-		this.order = order;
 	}
 
 	public String getName() {
@@ -44,12 +44,10 @@ public class Cliente {
 		this.birthDate = birthDate;
 	}
 
-	public Order getOrder() {
-		return order;
+	@Override
+	public String toString() {
+		return name + " (" + sdf.format(birthDate) + ") - " + email;
 	}
 
-	public void setOrder(Order order) {
-		this.order = order;
-	}
-
+	
 }
