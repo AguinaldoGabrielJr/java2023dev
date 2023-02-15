@@ -1,7 +1,5 @@
 package entities;
 
-import java.text.SimpleDateFormat;
-
 public class Employee {
 
 	private String name;
@@ -41,7 +39,7 @@ public class Employee {
 	public void setValuePerHour(Double valuePerHour) {
 		this.valuePerHour = valuePerHour;
 	}
-	
+
 	public Double payment() {
 		return hours * valuePerHour;
 	}

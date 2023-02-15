@@ -2,7 +2,6 @@ package poo.Exercicios;
 
 import java.util.Locale;
 import java.util.Scanner;
-import java.util.jar.Attributes.Name;
 
 public class MainExercicio02 {
 

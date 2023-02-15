@@ -54,6 +54,7 @@ public class Main {
 			System.out.println(prod.priceTag());
 		}
 		
+		
 		sc.close();
 	}
 }

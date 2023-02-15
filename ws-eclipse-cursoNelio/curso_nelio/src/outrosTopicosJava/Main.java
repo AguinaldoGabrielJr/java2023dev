@@ -21,7 +21,8 @@ public class Main {
 				b = sc.nextDouble();
 				c = sc.nextDouble();
 				delta = b * b - 4 * a * c; // cálculo do valor de delta
-
+				System.out.println(delta);
+				sc.close();
 			}
 
 		}
