@@ -1,24 +1,25 @@
 package tratamentoExcessoes;
 
-import java.util.InputMismatchException;
+import java.io.File;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Program {
 	public static void main(String[] args) {
-		
-		Scanner sc = new Scanner(System.in);
-		
+		File file = new File("C:\\in.txt");
+		Scanner sc = null;
 		try {
-			String[] vect = sc.nextLine().split(" ");
-			int position = sc.nextInt();
-			System.out.println(vect[position]);
-		} catch (ArrayIndexOutOfBoundsException e) {
-			System.out.println("Invalid position!");
-		} catch (InputMismatchException e) {
-			System.out.println("Input error");
+			sc = new Scanner(file);
+			while (sc.hasNextLine()) {
+				System.out.println(sc.nextLine());
+			}
+		} catch (IOException e) {
+			System.out.println("Error opening file: " + e.getMessage());
+		} finally { //Garante que obriga a fazer por ultimo
+			if (sc != null) {
+				sc.close();
+			}
 		}
-		
-		System.out.println("End of program");
-		sc.close();
+		System.out.println("Finally block executed");
 	}
 }
