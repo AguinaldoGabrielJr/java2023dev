@@ -15,7 +15,8 @@ public class Program {
 			}
 		} catch (IOException e) {
 			System.out.println("Error opening file: " + e.getMessage());
-		} finally { //Garante que obriga a fazer por ultimo
+		} finally { 
+			
 			if (sc != null) {
 				sc.close();
 			}
