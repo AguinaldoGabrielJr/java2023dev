@@ -22,5 +22,6 @@ public class Program {
 			}
 		}
 		System.out.println("Finally block executed");
+		System.out.println("END");
 	}
 }
